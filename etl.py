@@ -10,11 +10,11 @@ MOVIES_CSV = "movies.csv"
 RATINGS_CSV = "ratings.csv"
 
 # OMDb API key
-OMDB_API_KEY = "2b6939b2"
+OMDB_API_KEY = "your_api_key_here"
 
 # MySQL Database Config
 DB_USER = "root"
-DB_PASS = "12345678"
+DB_PASS = "Your_password_here"
 DB_HOST = "localhost"
 DB_PORT = 3306
 DB_NAME = "moviedb"
@@ -124,3 +124,4 @@ filtered_ratings.to_sql("ratings", engine, if_exists="replace", index=False)
 print("\n✅ ETL process completed successfully!")
 print(f"Inserted {len(movies_enriched)} movies and {len(filtered_ratings)} ratings into MySQL.")
 print("ETL process completed successfully!")
+
